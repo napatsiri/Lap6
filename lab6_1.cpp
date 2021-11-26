@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -9,15 +9,15 @@ int main()
     int even = 0;
     while ( N != 0)
     {
-        cout << "Enter an integer:";
+        cout << "Enter an integer: ";
         cin >> N;
             if(N%2 == 0){
-                even += 1; 
+                even = even+1; 
             if(N == 0){
-                even --;
+                even = even-1;
             } 
             }else{
-                odd ++;
+                odd = odd+1;
             }
     
     }
