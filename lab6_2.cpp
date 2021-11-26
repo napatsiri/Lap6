@@ -24,8 +24,10 @@ double pythagoras(double xcomp, double ycomp){
 }
 
 void showResult(double result_vec_length, double result_vec_direction){
+ cout << "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" << "\n";
  cout << "Length of the resultant vector = " << result_vec_length << "\n";
- cout << "Direction of the resultant vector (deg) = " << result_vec_direction;
+ cout << "Direction of the resultant vector (deg) = " << result_vec_direction << "\n";
+ cout << "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%";
 }
 
 
@@ -46,6 +48,8 @@ int main(){
     ycomp = findYComponent(l1,l2,a1,a2);
     result_vec_length = pythagoras(xcomp,ycomp);
     result_vec_direction = rad2deg(atan2(ycomp,xcomp)); 
-
+    
+    
     showResult(result_vec_length,result_vec_direction);
+    
 }
